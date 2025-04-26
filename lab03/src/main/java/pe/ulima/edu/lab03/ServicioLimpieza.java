@@ -25,6 +25,48 @@ public abstract class ServicioLimpieza {
         
         
     }
+
+    public String getDireccionCliente() {
+        return direccionCliente;
+    }
+
+    public void setDireccionCliente(String direccionCliente) {
+        this.direccionCliente = direccionCliente;
+    }
+
+    public double getDuracionHoras() {
+        return duracionHoras;
+    }
+
+    public void setDuracionHoras(double duracionHoras) {
+        this.duracionHoras = duracionHoras;
+    }
+
+    public double getTarifaHora() {
+        return tarifaHora;
+    }
+
+    public void setTarifaHora(double tarifaHora) {
+        this.tarifaHora = tarifaHora;
+    }
+
+    public boolean isIncluyeMateriales() {
+        return incluyeMateriales;
+    }
+
+    public void setIncluyeMateriales(boolean incluyeMateriales) {
+        this.incluyeMateriales = incluyeMateriales;
+    }
+
+    public String getNombreCliente() {
+        return nombreCliente;
+    }
+
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
+    }
+    
+    
     
     public double calcularPrecioBase(){
         

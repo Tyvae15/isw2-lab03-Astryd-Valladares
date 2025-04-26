@@ -10,12 +10,15 @@ package pe.ulima.edu.lab03;
  */
 public abstract class ServicioAdicional extends ServicioLimpieza {
     
-    public ServicioAdicional(String direccionCliente, double duracionHoras, double tarifaHora, boolean incluyeMateriales, String nombreCliente) {
-        super(direccionCliente, duracionHoras, tarifaHora, incluyeMateriales, nombreCliente);
+    protected ServicioLimpieza servicioBase;
+
+   public ServicioAdicional(ServicioLimpieza servicioBase) {
+        super(servicioBase.getDireccionCliente(), servicioBase.getDuracionHoras(), servicioBase.getTarifaHora(), servicioBase.isIncluyeMateriales(), servicioBase.getNombreCliente());
+        this.servicioBase = servicioBase;
     }
     
-    public abstract String getDescription();
     
+    @Override
     public abstract double CalcularPrecioFinal();
     
     

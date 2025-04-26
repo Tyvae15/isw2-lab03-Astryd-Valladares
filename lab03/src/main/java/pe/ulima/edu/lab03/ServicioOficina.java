@@ -24,6 +24,14 @@ public class ServicioOficina extends ServicioLimpieza{
         double base = duracionTotal * tarifaHora;
         return base * 1.18;
     }
+    
+    public int getCantidadEmpleados() {
+        return cantidadEmpleados;
+    }
+
+    public void setCantidadEmpleados(int cantidadEmpleados) {
+        this.cantidadEmpleados = cantidadEmpleados;
+    }
    
     
     

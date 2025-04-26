@@ -28,6 +28,16 @@ public class ServicioIndustrial extends ServicioLimpieza{
         return calcularPrecioBase() * multiplicadorRiesgo;
     }
     
+     public double getMultiplicadorRiesgo() {
+        return multiplicadorRiesgo;
+    }
+
+    public void setMultiplicadorRiesgo(double multiplicadorRiesgo) {
+        this.multiplicadorRiesgo = multiplicadorRiesgo;
+    }
+    
+    
+    
     
     
 }

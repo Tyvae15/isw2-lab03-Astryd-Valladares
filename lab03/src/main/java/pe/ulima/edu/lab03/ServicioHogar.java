@@ -30,4 +30,12 @@ public class ServicioHogar extends ServicioLimpieza{
        return precioBase;
     }
     
+     public boolean isEsApartamento() {
+        return esApartamento;
+    }
+
+    public void setEsApartamento(boolean esApartamento) {
+        this.esApartamento = esApartamento;
+    }
+    
 }

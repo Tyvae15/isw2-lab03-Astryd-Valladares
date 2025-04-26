@@ -8,6 +8,20 @@ package pe.ulima.edu.lab03;
  *
  * @author L34211
  */
-public class ConLimpiezaVidrios {
+public class ConLimpiezaVidrios extends ServicioAdicional {
+    
+     private static final double COSTO_LIMPIEZA = 10.0;
+
+    public ConLimpiezaVidrios(ServicioLimpieza servicioBase) {
+        super(servicioBase);
+    }
+
+
+    @Override
+    public double CalcularPrecioFinal() {
+        return servicioBase.CalcularPrecioFinal() + COSTO_LIMPIEZA;
+    }
+    
+    
     
 }
